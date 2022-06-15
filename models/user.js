@@ -1,4 +1,4 @@
-const mongoose = require("mogoose")
+const mongoose = require("mongoose")
 
 const userSchema = mongoose.Schema({
 
@@ -12,12 +12,12 @@ const userSchema = mongoose.Schema({
         trim:true,
         unique:true
     },
-    passwrd:{
+    password:{
         type:String,
         minlength:6
     },
-    lastname:{
-        type:string
+    lastName:{
+        type:String
     },
     role:
     {
