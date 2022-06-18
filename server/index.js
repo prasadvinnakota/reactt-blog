@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(cookieparser())
 
+app.get("/", (req,res)=>
+{
+    res.json({message:"success"})
+})
 
 app.get("/auth", auth, (req,res)=>
 {
