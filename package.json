@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "react boiler plate app",
   "main": "index.js",
+  "engine":
+  {
+     "node":"14.6.0",
+     "npm":"6.14.6"
+
+  },
+  
   "scripts": {
-    "start": "node index.js",
-    "backend":"nodemon index.js"
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "prasadvinnakota",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",
     "epress": "0.0.1-security",
     "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.8",
     "nodemon": "^2.0.16"
   }
